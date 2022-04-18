@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="jar.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> ESTO VA ACA? Sí, va acá. Hay que complementar con media queries
+<title id="solapa">El Arca</title>     
+</head>
+
+
+<body>  
+    <header> 
+      <img src="Imagenes\merm gourmet - arriba.jpg" alt="encabezadoarriba" width="100%" height="200px">  
+        <h1> El Arca <i> Gourmet </i> </h1>
+      <img src="Imagenes\merm gourmet - abajo.jpg" alt="encabezadoabajo" width="100%" height="200px"">
+      <br>
+      <h2>Un flechazo al paladar</h2> 
+    </header>
+<br><br>
+<!-- Enlaces ancla --> no me envía a los sitios web!!
+<a href="#Quienessomos">Quienes Somos</a>
+<a href="#Nuestrasvariedades">Nuestras Variedades</a>
+<a href="#Dóndeencontrarnos">Dónde Encontrarnos</a>
+<a href="#Cómocontactarnos">Cómo contactarnos</a>
+
+<br><br>
+<div class="flex-container">
+  <h3 class= "subtitulos">Quienes somos</h3>
+</div>
+<div>  
+  <p>Somos una pyme ubicada en San Rafael, provincia de Mendoza. Nos caracteriza la autonomía, ya que producimos la materia prima que luego utlizamos para la producción de nuestras mermeladas. Todos nuestros productos tienen certificación orgánica. <br> Además, nuestra fábrica cumple con todos los requisitos de calidad y cuidado ambiental, certificando series de normas ISO 9000 e ISO 14000. Basamos nuestros principios en las 3R de la producción; Reducir, Reutilizar y Reciclar. De ésta forma, El Arca se convierte en uno de los emprendimientos más sustentables y Ecofriendly de la región cuyana.</p>
+</div> 
+
+<!-- Borrar esto si el carrusel queda bien-->
+<div class="flex-container">
+  <h3 class= "subtitulos">Nuestras variedades</h3>
+</div>
+<br>
+  <li id="variedades" type="disc">Tomate</li>
+  <li id="variedades" type="disc">Damasco</li>
+  <li id="variedades" type="disc">Higo</li>
+  <li id="variedades" type="disc">Frambuesa</li>
+  <li id="variedades" type="disc">Durazno</li>
+  <li id="variedades" type="disc">Naranja</li>
+  <li id="variedades" type="disc">Ciruela</li>
+
+<br><br>
+Carusel de
+<!-- hasta aca -->
+
+<!-- Carousel PREGUNTAR SI LO QUE ESSTÁ FALLANDO EN EL JS -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Imagenes\11.jpg" class="d-block w-100" alt="Higo"  width="25%" height="25%">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes\08.-mermelada-de-ciruela.jpeg" class="d-block w-100" alt="Higo"  width="25%" height="25%">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes\mermelada-de-naranja.jpg" class="d-block w-100" alt="Higo"  width="25%" height="25%">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes\mermelada-de-damasco (1).jpg" class="d-block w-100" alt="Higo"  width="25%" height="25%">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes\8718.jpg.webp" class="d-block w-100" alt="Frambuesa" width="25%" height="25%">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes\mermelada_de_tomate_con_albahaca-jpeg.jpg" class="d-block w-100" alt="Tomate" width="25%" height="25%">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes\durazno.jpg" class="d-block w-100" alt="Durazno" width="25%" height="25%">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+<!-- Acá termina el carousel -->
+<div class="flex-container">
+    <h3 class= "subtitulos">Dónde encontrarnos</h3>
+</div>
+<div id="iframe">
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1649553862281!6m8!1m7!1sY3SYeH2NzLXNsSX60VKMBw!2m2!1d-34.67197287302675!2d-68.10898242314418!3f167.02787865719364!4f0!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="290" height="250"></iframe>"
+</div>
+
+<div class="flex-container">
+        <h3 class= "subtitulos"> Cómo contactarnos </h3>
+</div>
+        <form action="/action_page.php" id="formulario"> 
+            <label for="completename">Nombre<br><textarea name="nombre" rows="1" cols="50" maxlength= "60">Escribe tu nombre</textarea></label><br><br>
+            <!-- Nota para leer antes de la corrección: ya se que en la casilla "nombre" no corresponde colocar rows y cols, sino size, pero ésta fue la unica forma que se me ocurrió para lograr que todas las casillas tengan el mismo width--> 
+            <label for="texto">Consulta<br><textarea name="comentario" rows="4" cols="50">Escribe tu consulta</textarea></label><br><br>
+            <label for="completename">Dirección de correo<br><textarea name="correoelectronico" rows="2" cols="50">Dejanos tu correo electrónico para poder responder todas tus dudas</textarea></label><br><br>
+            <input type="submit" value="Submit"><br><br>
+        </form>
+</body>
+</html>
