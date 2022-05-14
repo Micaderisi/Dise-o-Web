@@ -25,13 +25,29 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    /*  Slogan un flechazo al paladar  */
-        color: olive;
-        border-width: 1px;
-        text-align: center;
-        font-style: italic;
+
+/* Transición de slogan*/
+
+.transicion {
+    background: #f3e7ce;
+    color: olive;
+    padding: 2px;
+    text-align: center;
+    font-style: italic;
 }
+
+.transicion:hover {
+    background: #f1d69f;
+    color: #240c52;
+    padding: 18px 24px;
+    text-align: center;
+    font-style: italic;
+    
+    transition-property: all; 
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
 
 .subtitulos {
     color: brown;
@@ -90,6 +106,30 @@ div p {
     font-size: 30px;
 }
 
+/*Carrusel*/
+
+.galeria {
+    width: 700px;
+    object-fit: cover;
+    padding:16px;
+    display: flex;
+    position: relative;
+}
+
+
+
+.imagenes {
+    display: flex;  
+    overflow-y: auto;
+    width: 500px;
+    height: 500px;
+    margin-right: 10px; 
+    margin-top: 10px;
+    object-fit: cover;
+    position: relative;
+}
+
+
 #formulario {
   width: 50%;
   padding: 15px;
@@ -117,5 +157,6 @@ div p {
     border-left: 500px;
     border-right: 500px;
 }
+
 
 
